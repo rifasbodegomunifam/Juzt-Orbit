@@ -10,3 +10,242 @@ License URI: https://mit-license.org/
 Tags: optimized, efficiently, development
 Text Domain: JuztOrbit
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --head-fonts: "Fugaz One", sans-serif;
+  --body-fonts: "Open Sans", sans-serif;
+}
+
+body {
+  font-family: var(--body-fonts);
+}
+
+/**
+** Header
+**/
+
+.site-header {
+  width: 100%;
+  padding: 20px;
+  background-color: #151515;
+  color: #ffffff;
+  text-align: center;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .site-header-logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-family: var(--head-fonts);
+    font-size: 2.5rem;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+
+      li {
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-family: var(--head-fonts);
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+** Footer
+**/
+
+.site-footer {
+  background-color: #151515;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  padding: 4px 0px;
+}
+
+/***
+** HELLO ORBIT 
+***/
+
+.hello-orbit-section {
+  width: 100%;
+  min-height: calc(100vh - 154px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    min-height: calc(100vh - 168px);
+  }
+
+  .hello-orbit-logo {
+    width: 50rem;
+    position: absolute;
+    opacity: 0.3;
+    @media screen and (max-width: 1024px) {
+      width: 30rem;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      top: 0;
+    }
+  }
+
+  .hello-orbit-title {
+    font-family: var(--head-fonts);
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hello-orbit-subtitle {
+    font-family: var(--head-fonts);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .hello-orbit-content {
+    max-width: 1024px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 99;
+    }
+
+    ul.hello-orbit-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      list-style: none;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      li {
+        background-color: var(--text-color);
+        padding: 15px;
+        border-radius: 4px;
+        text-align: center;
+        color: var(--bg-color);
+
+        h3 {
+          font-size: 3rem;
+          letter-spacing: -5px;
+          word-spacing: 3px;
+        }
+      }
+    }
+    
+    ul.hello-orbit-docs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      list-style: none;
+      width: 100%;
+      margin-bottom: 1rem;
+
+      @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+      li {
+        background-color: var(--text-color);
+        border-radius: 4px;
+        padding: 15px;
+        text-align: center;
+        color: var(--bg-color);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+        h3 {
+          font-size: 2rem;
+          font-family: var(--head-fonts);
+        }
+
+        a {
+          color: var(--bg-color);
+          text-decoration: none;
+          
+          font-family: var(--head-fonts);
+          font-size: 2rem;
+          display: block;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/***
+** Main Page Section 
+***/
+
+.orbit-main-page {
+  .orbit-main-page__meta {
+    width: 100%;
+    padding: 40px 20px;
+    background-color: var(--bg-color);
+    text-align: center;
+    
+    .orbit-main-page__title {
+      font-family: var(--head-fonts);
+      font-size: 3rem;
+      color: #fff;
+    }
+  }
+
+  .orbit-main-page__contet {
+    max-width: 1024px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    a {
+      text-decoration: underline;
+      color: var(--link-color);
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}

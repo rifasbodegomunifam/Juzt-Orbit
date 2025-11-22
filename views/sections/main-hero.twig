@@ -1,0 +1,21 @@
+{% set max_width = section.settings.max_width %}
+{% set gradient_color_1 = section.settings.gradient_color_1 %}
+{% set gradient_color_2 = section.settings.gradient_color_2 %}
+
+<div class="{{ max_width }}" style="--gradient-color-1: {{ gradient_color_1 }}; --gradient-color-2: {{ gradient_color_2 }};">
+{% for slide in section.blocks %}
+    <div class="main-hero__slide">
+        <div class="main-hero__content">
+            {% if slide.settings.title %}
+                <h2 class="main-hero__title">{{ slide.settings.title }}</h2>
+            {% endif %}
+            {% if slide.settings.subtitle %}
+                <p class="main-hero__subtitle">{{ slide.settings.subtitle }}</p>
+            {% endif %}
+            {% if slide.settings.button_text and slide.settings.button_url %}
+                <a href="{{ slide.settings.button_url }}" class="main-hero__button">{{ slide.settings.button_text }}</a>
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}
+</div>

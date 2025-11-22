@@ -1,9 +1,6 @@
 {
     "name": "juztstack/juztorbit",
     "type": "theme",
-    "require": {
-        "timber/timber": "2.0.0"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {

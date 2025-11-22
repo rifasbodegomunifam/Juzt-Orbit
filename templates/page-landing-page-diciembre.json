@@ -1,0 +1,20 @@
+{
+    "name": "page-landing-page-diciembre",
+    "description": "Template created with Juzt Studio for Timber/Twig",
+    "template": true,
+    "order": [
+        "section_1763737540035"
+    ],
+    "sections": {
+        "section_1763737540035": {
+            "section_id": "hello-orbit",
+            "settings": {
+                "background": "#033f0d",
+                "color": "#ff0000",
+                "title": "Oferta decembrina"
+            },
+            "blocks": []
+        }
+    },
+    "post_type": "page"
+}

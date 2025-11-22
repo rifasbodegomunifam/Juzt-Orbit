@@ -1,0 +1,18 @@
+{
+    "template": "page",
+    "sections": {
+        "section_1763732558646": {
+            "section_id": "main-page",
+            "settings": {
+                "background": "#6333ff"
+            },
+            "blocks": []
+        }
+    },
+    "order": [
+        "section_1763732558646"
+    ],
+    "name": "Single Page Template",
+    "description": "Main template for pages",
+    "post_type": "page"
+}

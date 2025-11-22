@@ -1,0 +1,19 @@
+{
+    "name": "page-landing-offert-2025",
+    "description": "Template created with Juzt Studio for Timber/Twig",
+    "template": true,
+    "order": [
+        "section_1763737080694"
+    ],
+    "sections": {
+        "section_1763737080694": {
+            "section_id": "hello-orbit",
+            "settings": {
+                "background": "#20679d",
+                "color": "#ff14e0"
+            },
+            "blocks": []
+        }
+    },
+    "post_type": "page"
+}

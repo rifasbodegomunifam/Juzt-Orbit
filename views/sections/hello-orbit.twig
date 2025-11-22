@@ -1,0 +1,32 @@
+{% set bg_color = section.settings.background | default("#6132fb") %}
+{% set text_color = section.settings.color | default("#ffffff") %}
+<div class="hello-orbit-section" style="--bg-color:{{bg_color}}; --text-color:{{text_color}};">
+  <img class="hello-orbit-logo" src="{{ site.theme.link }}/images/orbit-white.svg"/>
+  <div class="hello-orbit-content">
+    <h2 class="hello-orbit-title">{{ section.settings.title }}</h2>
+    <ul class="hello-orbit-features">
+      {% for block in section.blocks %}
+        {% if block.type == "feature" %}
+          <li class="hello-orbit-block">
+            <h3 class="hello-orbit-block-title">{{ block.settings.title }}</h3>
+            <p class="hello-orbit-block-description">{{ block.settings.description }}</p>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <h3 class="hello-orbit-subtitle">Docs</h3>
+    <ul class="hello-orbit-docs">
+      {% for block in section.blocks %}
+        {% if block.type == "docs" %}
+          <li class="hello-orbit-docs-item">
+            <h3 class="hello-orbit-docs-title">{{ block.settings.title }}</h3>
+            <p class="hello-orbit-docs-description">{{ block.settings.description }}</p>
+            {% if block.settings.link %}
+            <a href="{{ block.settings.link }}" class="hello-orbit-docs-link">GO!</a>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>

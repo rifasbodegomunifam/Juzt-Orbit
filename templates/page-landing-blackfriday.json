@@ -1,0 +1,20 @@
+{
+    "name": "page-landing-blackfriday",
+    "description": "Template created with Juzt Studio for Timber/Twig",
+    "template": true,
+    "order": [
+        "section_1763738172269"
+    ],
+    "sections": {
+        "section_1763738172269": {
+            "section_id": "hello-orbit",
+            "settings": {
+                "title": "Black friday",
+                "background": "#000000",
+                "color": "#ff3f0f"
+            },
+            "blocks": []
+        }
+    },
+    "post_type": "page"
+}

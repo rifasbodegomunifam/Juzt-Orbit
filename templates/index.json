@@ -1,0 +1,65 @@
+{
+    "template": "index",
+    "sections": {
+        "section_1763724281878": {
+            "section_id": "hello-orbit",
+            "settings": {
+                "title": "Hello Orbit!",
+                "background": "#6132fb",
+                "color": "#ffffff"
+            },
+            "blocks": [
+                {
+                    "type": "feature",
+                    "settings": {
+                        "title": "JSON Template",
+                        "description": "The templates for pages have been manager by a minimal customizer"
+                    }
+                },
+                {
+                    "type": "feature",
+                    "settings": {
+                        "title": "Twig Sections",
+                        "description": "The sections get all data from the templates JSON."
+                    }
+                },
+                {
+                    "type": "feature",
+                    "settings": {
+                        "title": "Twig Snippets",
+                        "description": "Snippets code for reuse on all sections."
+                    }
+                },
+                {
+                    "type": "docs",
+                    "settings": {
+                        "title": "Github Repository",
+                        "description": "Get theme base for start development",
+                        "link": "https://github.com/juztstack"
+                    }
+                },
+                {
+                    "type": "docs",
+                    "settings": {
+                        "title": "Juzt Studio",
+                        "description": "Download Plugin for customizer the templates",
+                        "link": "https://www.juztstack.dev/products/juztstudio-community"
+                    }
+                },
+                {
+                    "type": "docs",
+                    "settings": {
+                        "title": "Get Started",
+                        "description": "Edit this section on /views/sections/hello-orbit.twig",
+                        "link": ""
+                    }
+                }
+            ]
+        }
+    },
+    "order": [
+        "section_1763724281878"
+    ],
+    "name": "Home page",
+    "description": "Main template file"
+}

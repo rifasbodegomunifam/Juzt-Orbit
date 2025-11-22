@@ -1,0 +1,35 @@
+{
+    "name": "page-oferta-herbalife",
+    "description": "Template created with Juzt Studio for Timber/Twig",
+    "template": true,
+    "order": [
+        "section_1763751735948"
+    ],
+    "sections": {
+        "section_1763751735948": {
+            "section_id": "hello-orbit",
+            "settings": {
+                "background": "#4f8112",
+                "color": "#d4ff00",
+                "title": "Oferta herbalife diciembre 2025"
+            },
+            "blocks": [
+                {
+                    "type": "feature",
+                    "settings": {
+                        "title": "Te + Fibra + Aloe",
+                        "description": "$1.000.000"
+                    }
+                },
+                {
+                    "type": "feature",
+                    "settings": {
+                        "title": "Batido + proteina",
+                        "description": "$ 800.000"
+                    }
+                }
+            ]
+        }
+    },
+    "post_type": "page"
+}

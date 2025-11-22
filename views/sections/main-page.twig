@@ -1,0 +1,10 @@
+{% set bg_color = section.settings.background | default("#6132fb") %}
+
+<div class="orbit-main-page">
+  <div class="orbit-main-page__meta" style="--bg-color: {{ bg_color }};">
+    <h1 class="orbit-main-page__title">{{ post.title }}</h1>
+  </div>
+  <div class="orbit-main-page__contet" style="--link-color: {{ bg_color }};">
+    {{ post.content }}
+  </div>
+</div>

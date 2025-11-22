@@ -1,0 +1,16 @@
+{% block html_head_container %}
+	{% include 'layouts/head.twig' %}
+	{% block head %}{% endblock %}
+    </head>
+{% endblock %}
+    <body class="{{body_class}} bg-gray-50">
+        {% include "layouts/header.twig" %}
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        {% include "layouts/footer.twig" %}
+        {% block footer %}{% endblock %}
+        </footer>
+        {{function('wp_footer')}}
+    </body>
+</html>

@@ -1,0 +1,57 @@
+{
+    "name": "page-test-preview",
+    "description": "Template created with Juzt Studio for Timber/Twig",
+    "template": true,
+    "order": [
+        "section_1763754888258"
+    ],
+    "sections": {
+        "section_1763754888258": {
+            "section_id": "main-hero",
+            "settings": {
+                "gradient_color_1": "#f57575",
+                "gradient_color_2": "#f9d648",
+                "max_width": "container-fluid"
+            },
+            "blocks": [
+                {
+                    "type": "slide",
+                    "settings": {
+                        "title": "Welcome to Juzt Orbit 1",
+                        "subtitle": "Your journey starts here 1",
+                        "button_text": "Get Started 1",
+                        "button_link": "#!"
+                    }
+                },
+                {
+                    "type": "slide",
+                    "settings": {
+                        "title": "Welcome to Juzt Orbit2",
+                        "subtitle": "Your journey starts here2",
+                        "button_text": "Get Started2",
+                        "button_link": "#!"
+                    }
+                },
+                {
+                    "type": "slide",
+                    "settings": {
+                        "title": "Welcome to Juzt Orbit3",
+                        "subtitle": "Your journey starts here3",
+                        "button_text": "Get Started3",
+                        "button_link": "#!"
+                    }
+                },
+                {
+                    "type": "slide",
+                    "settings": {
+                        "title": "Welcome to Juzt Orbit4",
+                        "subtitle": "Your journey starts here4",
+                        "button_text": "Get Started4",
+                        "button_link": "#!"
+                    }
+                }
+            ]
+        }
+    },
+    "post_type": "page"
+}
