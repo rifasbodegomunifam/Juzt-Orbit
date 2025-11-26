@@ -1,3 +1,5 @@
+![Example screenshot](./screenshot.png)
+
 # Juzt Orbit Theme
 
 **Theme Name:** Juzt Orbit
@@ -106,12 +108,8 @@ The main rendering logic uses the `order` array to loop through sections and inc
 
 ## 🤝 Contributing
 
-This theme is developed by Jesus Uzcategui and utilizes the Juzt Studio Community plugin. Contributions and improvements are welcome\!
+Jesus Uzcategui develops this theme and utilizes the Juzt Studio Community plugin. Contributions and improvements are welcome\!
 
 ## 📄 License
 
-Juzt Orbit is licensed under the **GNU v2 License**.
-
------
-
-\*\*\*\* (Reference to `screenshot.png`)
+Juzt Orbit is licensed under the **MIT License**.
