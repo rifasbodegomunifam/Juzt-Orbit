@@ -12,7 +12,7 @@
                 {
                     "type": "feature",
                     "settings": {
-                        "title": "JSON Template",
+                        "title": "JSON Templates",
                         "description": "The templates for pages have been manager by a minimal customizer"
                     }
                 },
@@ -55,39 +55,9 @@
                     }
                 }
             ]
-        },
-        "section_1763917520977": {
-            "section_id": "hello-juzt",
-            "settings": {
-                "background_color": "#46219c",
-                "title": "Hello from Juzt Extension!!",
-                "subtitle": "This section comes from an extension!"
-            },
-            "blocks": []
-        },
-        "section_1763919757056": {
-            "section_id": "main-hero",
-            "settings": {
-                "gradient_color_1": "#FF6B6B",
-                "gradient_color_2": "#FFD93D",
-                "max_width": "container-fluid"
-            },
-            "blocks": [
-                {
-                    "type": "slide",
-                    "settings": {
-                        "title": "Welcome to Juzt Orbit!",
-                        "subtitle": "Your journey starts here",
-                        "button_text": "Get Started",
-                        "button_link": "#"
-                    }
-                }
-            ]
         }
     },
     "order": [
-        "section_1763919757056",
-        "section_1763917520977",
         "section_1763724281878"
     ],
     "name": "Home page Front",

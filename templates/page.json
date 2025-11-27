@@ -7,19 +7,10 @@
                 "background": "#6333ff"
             },
             "blocks": []
-        },
-        "section_1763906456898": {
-            "section_id": "hello-juzt",
-            "settings": {
-                "subtitle": "Testing juzt-extension",
-                "background_color": "#6e8113"
-            },
-            "blocks": []
         }
     },
     "order": [
-        "section_1763732558646",
-        "section_1763906456898"
+        "section_1763732558646"
     ],
     "name": "Single Page Template",
     "description": "Main template for pages",
