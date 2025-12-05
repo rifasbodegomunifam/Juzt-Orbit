@@ -5,8 +5,8 @@
             "section_id": "hello-orbit",
             "settings": {
                 "title": "Hello Orbit!",
-                "background": "#6132fb",
-                "color": "#ffffff"
+                "background": "#85a98a",
+                "color": "#422b3a"
             },
             "blocks": [
                 {
