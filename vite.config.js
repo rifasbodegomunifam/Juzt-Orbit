@@ -1,9 +1,14 @@
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  
+  plugins: [tailwindcss()],
 
   server: {
     cors: true,
+    hmr: true,
+    port: 5174
   },
   
   build: {

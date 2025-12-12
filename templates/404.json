@@ -1,0 +1,18 @@
+{
+    "template": "404",
+    "sections": {
+        "main-nofound": {
+            "section_id": "main-nofound",
+            "settings": {
+                "background": "#6333ff"
+            },
+            "blocks": []
+        }
+    },
+    "order": [
+        "main-nofound"
+    ],
+    "name": "No found page",
+    "description": "Main template for 404 pages",
+    "post_type": "page"
+}
