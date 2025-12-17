@@ -6,7 +6,8 @@
             "settings": {
                 "title": "Hello Orbit!",
                 "background": "#85a98a",
-                "color": "#422b3a"
+                "color": "#422b3a",
+                "image": "14"
             },
             "blocks": [
                 {
