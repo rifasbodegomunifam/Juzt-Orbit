@@ -9,7 +9,7 @@
 use Timber\Timber;
 use JuztStack\JuztOrbit\StartSite;
 
-define('JUZT_ORBIT_VERSION', '0.0.13');
+define('JUZT_ORBIT_VERSION', '0.0.14');
 define('JUZT_ORBIT_DIR', get_template_directory(__FILE__));
 define('JUZT_ORBIT_URL', get_template_directory_uri(__FILE__));
 define('JUZT_ORBIT_DEVELOPMENT_MODE', false); // Change to false in production
@@ -29,11 +29,11 @@ remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 
 // 2. Remover query strings
-add_filter('script_loader_src', 'remove_query_strings', 15, 1);
+/*add_filter('script_loader_src', 'remove_query_strings', 15, 1);
 add_filter('style_loader_src', 'remove_query_strings', 15, 1);
 function remove_query_strings($src) {
     return $src ? esc_url(remove_query_arg('ver', $src)) : $src;
-}
+}*/
 
 // 3. Deshabilitar embeds
 add_action('wp_footer', function() {

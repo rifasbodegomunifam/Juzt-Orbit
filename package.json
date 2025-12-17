@@ -12,6 +12,8 @@
   "license": "MIT",
   "packageManager": "pnpm@10.15.1",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "tailwindcss": "^4.1.18",
     "vite": "^7.2.4"
   }
 }

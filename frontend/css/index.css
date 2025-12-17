@@ -1,11 +1,6 @@
 /* src/css/app.css */
 @import "tailwindcss";
 
-/* Configuración de fuentes (sources) */
-@source "./**/*.php";
-@source "./views/**/*.twig";
-@source "./frontend/**/*.js";
-
 /* Tema personalizado */
 @theme {
     --color-dark-bg: #1a1a1a;

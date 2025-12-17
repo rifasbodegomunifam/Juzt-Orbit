@@ -3,7 +3,12 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   
-  plugins: [tailwindcss()],
+  plugins: [tailwindcss({
+    content: [
+      './**/*.{php,twig}',
+      './src/**/*.js',
+    ]
+  })],
 
   server: {
     cors: true,

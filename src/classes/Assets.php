@@ -51,6 +51,13 @@ class Assets
             JUZT_ORBIT_VERSION,
             true
           );
+
+          add_filter('script_loader_tag', function ($tag, $hand) use ($handle) {
+            if ($hand == $handle) {
+                return str_replace('<script', '<script type="module"', $tag);
+            }
+            return $tag;
+          }, 5, 2);
         }
       }
     } else {

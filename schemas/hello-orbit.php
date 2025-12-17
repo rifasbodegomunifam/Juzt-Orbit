@@ -18,6 +18,10 @@ return [
       "type" => "color",
       "label" => "Text Color",
       "default" => "#ffffff"
+    ],
+    "image" => [
+      "type" => "file",
+      "label" => "Image"
     ]
   ],
   "blocks" => [
