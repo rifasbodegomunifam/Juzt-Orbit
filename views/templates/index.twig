@@ -3,7 +3,6 @@
     {% for item in order %}
       {% set section_id = sections[item].section_id %}
       {% set asset_source = get_section_source(section_id) %}
-      
       <section id="{{ item }}" data-section-id="{{ section_id }}">
         {% include [
             "sections/" ~ section_id ~ ".twig",

@@ -4,7 +4,7 @@ use \Juztstack\JuztStudio\Community\Templates;
 use Timber\Timber;
 
 $template = new Templates();
-$template_content = $template->get_json_template('404');
+$template_content = $template->get_json_template('no-found');
 
 $context = Timber::context();
 $context['order'] = $template_content['order'];
