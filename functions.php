@@ -9,7 +9,7 @@
 use Timber\Timber;
 use JuztStack\JuztOrbit\StartSite;
 
-define('JUZT_ORBIT_VERSION', '0.0.14');
+define('JUZT_ORBIT_VERSION', '0.0.15');
 define('JUZT_ORBIT_DIR', get_template_directory(__FILE__));
 define('JUZT_ORBIT_URL', get_template_directory_uri(__FILE__));
 define('JUZT_ORBIT_DEVELOPMENT_MODE', false); // Change to false in production
