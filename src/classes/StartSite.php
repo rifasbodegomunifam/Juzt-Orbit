@@ -24,8 +24,12 @@ class StartSite extends Site
     new Assets([
       "dev" => [
         "js" => [
+          "juzt-vite-client" => "/@vite/client",
           "juzt-orbit-script" => "/frontend/js/index.js"
-        ]
+        ],
+        'css' => [
+          'juzt-orbit-style' => '/frontend/css/index.css', // ← Separado
+        ],
       ],
       "prod" => [
         "js" => [

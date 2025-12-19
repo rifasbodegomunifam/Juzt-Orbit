@@ -36,13 +36,30 @@ function remove_query_strings($src) {
 }*/
 
 // 3. Deshabilitar embeds
-add_action('wp_footer', function() {
+add_action('wp_footer', function () {
     wp_dequeue_script('wp-embed');
 });
 
-add_action('admin_init', function() {
+add_action('admin_init', function () {
     if (isset($_GET['rebuild'])) {
         delete_transient('juzt_registry_indexx_' . JUZTSTUDIO_CM_VERSION);
         wp_die('✅ Cache cleared! <a href="' . admin_url('admin.php?page=juzt-studio') . '">Ir a Studio</a>');
     }
 });
+
+add_action('init', function () {
+    if (isset($_GET['flush_rifas'])) {
+        flush_rewrite_rules();
+        wp_die('✅ Rewrite rules flushed! Ahora prueba /rifas/page/2/');
+    }
+}, 999);
+
+add_action('init', function () {
+    if (isset($_GET['debug_rewrites'])) {
+        global $wp_rewrite;
+        echo '<pre>';
+        print_r($wp_rewrite->rules);
+        echo '</pre>';
+        wp_die();
+    }
+}, 999);

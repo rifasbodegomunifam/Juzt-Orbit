@@ -2,11 +2,11 @@
 
 namespace JuztStack\JuztOrbit;
 
-class Assets 
+class Assets
 {
   private $assets;
 
-  public function __construct($assets=[])
+  public function __construct($assets = [])
   {
     $this->assets = $assets;
 
@@ -34,19 +34,20 @@ class Assets
       get_template_directory_uri() . '/style.css',
       array(),
       JUZT_ORBIT_VERSION,
-      'all');
+      'all'
+    );
   }
 
   public function enqueueScripts()
   {
 
-    if(JUZT_ORBIT_DEVELOPMENT_MODE){
+    if (JUZT_ORBIT_DEVELOPMENT_MODE) {
       // Development mode
       if (isset($this->assets['dev']['js'])) {
         foreach ($this->assets['dev']['js'] as $handle => $path) {
           wp_enqueue_script(
             $handle,
-            get_template_directory_uri() . $path,
+            "http://localhost:5174" . $path,
             array(),
             JUZT_ORBIT_VERSION,
             true
@@ -54,10 +55,22 @@ class Assets
 
           add_filter('script_loader_tag', function ($tag, $hand) use ($handle) {
             if ($hand == $handle) {
-                return str_replace('<script', '<script type="module"', $tag);
+              return str_replace('<script', '<script type="module"', $tag);
             }
             return $tag;
           }, 5, 2);
+        }
+      }
+
+      if (isset($this->assets['dev']['css'])) {
+        foreach ($this->assets['dev']['css'] as $handle => $path) {
+          wp_enqueue_style(
+            $handle,
+            "http://localhost:5174" . $path,
+            array(),
+            JUZT_ORBIT_VERSION,
+            'all'
+          );
         }
       }
     } else {
@@ -86,6 +99,5 @@ class Assets
         }
       }
     }
-
   }
 }

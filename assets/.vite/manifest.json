@@ -1,0 +1,17 @@
+{
+  "frontend/css/index.css": {
+    "file": "css/style.css",
+    "src": "frontend/css/index.css",
+    "isEntry": true,
+    "name": "style",
+    "names": [
+      "style.css"
+    ]
+  },
+  "frontend/js/index.js": {
+    "file": "js/script.js",
+    "name": "script",
+    "src": "frontend/js/index.js",
+    "isEntry": true
+  }
+}

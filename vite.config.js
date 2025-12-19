@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [tailwindcss({
     content: [
       './**/*.{php,twig}',
-      './src/**/*.js',
+      './frontend/**/*.js',
     ]
   })],
 
@@ -17,25 +17,24 @@ export default defineConfig({
   },
   
   build: {
-    
     outDir: 'assets',
-
-   
+    cssCodeSplit: true,
+    
+    // ✅ Importante: Generar manifest
+    manifest: true,
+    
     rollupOptions: {
-      
       input: {
-        script: 'frontend/js/index.js', 
+        // ✅ CSS como entrada separada
         style: 'frontend/css/index.css',
+        script: 'frontend/js/index.js',
       },
 
       output: {
-        
         assetFileNames: (assetInfo) => {
-          
           if (assetInfo.name.endsWith('.css')) {
             return 'css/[name].[ext]'; 
           }
-          
           return '[name].[ext]';
         },
         chunkFileNames: 'js/[name].js',

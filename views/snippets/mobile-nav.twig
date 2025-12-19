@@ -1,0 +1,79 @@
+<div id="mobile-menu" class="hidden py-4 border-t border-gray-800 lg:hidden">
+	<div class="flex flex-col gap-2">
+		<a href="#" class="cursor-pointer py-2 text-white transition-colors hover:text-red-500">
+			Inicio
+		</a>
+
+		<!-- Rifas Mobile Submenu -->
+		<div>
+			<button data-submenu="rifas" class="flex items-center justify-between w-full py-2 text-white transition-colors submenu-toggle hover:text-red-500">
+				Rifas
+				<svg class="w-4 h-4 transition-transform chevron-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+				</svg>
+			</button>
+			<div class="flex-col hidden gap-2 pl-4 mt-2 submenu-content">
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Rifas Activas
+				</a>
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Próximas Rifas
+				</a>
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Rifas Finalizadas
+				</a>
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Ganadores
+				</a>
+			</div>
+		</div>
+
+		<!-- Categorías Mobile Submenu -->
+		<div>
+			<button data-submenu="categorias" class="flex items-center justify-between w-full py-2 text-white transition-colors submenu-toggle hover:text-red-500">
+				Categorías
+				<svg class="w-4 h-4 transition-transform chevron-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+				</svg>
+			</button>
+			<div class="flex-col hidden gap-2 pl-4 mt-2 submenu-content">
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Electrónicos
+				</a>
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Vehículos
+				</a>
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Viajes
+				</a>
+				<a href="#" class="cursor-pointer py-1 text-gray-400 transition-colors hover:text-red-500">
+					Efectivo
+				</a>
+			</div>
+		</div>
+
+		<a href="#" class="cursor-pointer py-2 text-white transition-colors hover:text-red-500">
+			Cómo Funciona
+		</a>
+		<a href="#" class="cursor-pointer py-2 text-white transition-colors hover:text-red-500">
+			Contacto
+		</a>
+
+		<div class="flex gap-2 mt-4">
+			<button class="flex-1 px-4 py-2 font-medium text-white transition-colors bg-red-600 rounded-lg hover:bg-red-700">
+				Mis Boletos
+			</button>
+		</div>
+	</div>
+</div>
+
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-button" class="p-2 text-white lg:hidden">
+	<svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+		<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+	</svg>
+	<svg id="close-icon" class="hidden w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+		<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+	</svg>
+</button>
+<!-- Mobile Menu Button -->
