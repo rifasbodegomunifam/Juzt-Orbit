@@ -3,6 +3,10 @@
 use \Juztstack\JuztStudio\Community\Templates;
 use Timber\Timber;
 
+global $paged;
+
+var_dump($paged);
+
 $template = new Templates();
 $template_content = $template->get_json_template('no-found');
 

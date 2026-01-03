@@ -1,5 +1,5 @@
 {
-    "template": "404",
+    "template": "No found page",
     "sections": {
         "main-nofound": {
             "section_id": "main-nofound",
